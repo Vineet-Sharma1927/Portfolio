@@ -41,7 +41,7 @@ export default function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
               >
-                Hi, I'm
+                Hi, I&apos;m
               </motion.span>
               <motion.span 
                 className="block text-indigo-600 dark:text-indigo-400"
@@ -108,7 +108,15 @@ export default function Hero() {
             >
               {/* Replace with your own image */}
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
-                <span><img src="/Vineetimg.jpeg" alt="Vineet Sharma" /></span>
+                <span>
+                  <Image
+                    src="/Vineetimg.jpeg"
+                    alt="Vineet Sharma"
+                    width={320}
+                    height={320}
+                    priority
+                  />
+                </span>
               </div>
             </motion.div>
           </motion.div>

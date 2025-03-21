@@ -32,6 +32,9 @@ export default function ScrollReveal({
   useEffect(() => {
     if (!ref.current) return;
     
+    // Store ref.current in a variable for the cleanup function
+    const currentRef = ref.current;
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
@@ -53,10 +56,10 @@ export default function ScrollReveal({
       { threshold: threshold }
     );
     
-    observer.observe(ref.current);
+    observer.observe(currentRef);
     
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, [controls, delay, duration, threshold]);
 

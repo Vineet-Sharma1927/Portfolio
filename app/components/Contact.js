@@ -226,7 +226,7 @@ export default function Contact() {
                   custom={0}
                   viewport={{ once: true, margin: "-50px" }}
                 >
-                  I'm currently open to freelance opportunities, collaborations, and interesting projects. 
+                  I&apos;m currently open to freelance opportunities, collaborations, and interesting projects. 
                   Feel free to reach out through any of the platforms below.
                 </motion.p>
                 
