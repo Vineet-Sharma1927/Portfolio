@@ -13,7 +13,7 @@ export default function Projects() {
       image: '/blog.jpeg',
       tech: ['React', 'Node.js', 'MongoDB', 'Firebase', 'Cloudinary'],
       github: 'https://github.com/Vineet-Sharma1927/Blog-Sphere',
-      demo: 'https://blog-sphere-demo.vercel.app/'
+      demo: 'https://github.com/Vineet-Sharma1927/Blog-Sphere'
     },
     {
       id: 2,
@@ -33,15 +33,6 @@ export default function Projects() {
       github: 'https://github.com/Vineet-Sharma1927/IPL-APP',
       demo: 'https://ipl-app-sigma.vercel.app/'
     },
-    {
-      id: 4,
-      title: 'Vehicle Detection System',
-      description: 'An AI-powered system that detects and classifies vehicles in real-time using computer vision.',
-      image: '/placeholder-project.jpg',
-      tech: ['Python', 'TensorFlow', 'OpenCV', 'Flask'],
-      github: 'https://github.com/yourusername/vehicle-detection',
-      demo: 'https://vehicle-detection-demo.vercel.app/'
-    }
   ];
 
   return (

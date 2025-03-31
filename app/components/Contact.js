@@ -106,113 +106,12 @@ export default function Contact() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <ScrollReveal direction="left" delay={0.1}>
-            <motion.div 
-              className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-md"
-              whileHover={{ boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)' }}
-            >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Me a Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <motion.div
-                  variants={fadeInUpVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  custom={0}
-                  viewport={{ once: true, margin: "-50px" }}
-                >
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 dark:bg-gray-700 dark:text-white"
-                    placeholder="Enter your name"
-                  />
-                </motion.div>
-                
-                <motion.div
-                  variants={fadeInUpVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  custom={1}
-                  viewport={{ once: true, margin: "-50px" }}
-                >
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 dark:bg-gray-700 dark:text-white"
-                    placeholder="Enter your email"
-                  />
-                </motion.div>
-                
-                <motion.div
-                  variants={fadeInUpVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  custom={2}
-                  viewport={{ once: true, margin: "-50px" }}
-                >
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Your Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 dark:bg-gray-700 dark:text-white"
-                    placeholder="Hello, I'd like to talk about..."
-                  />
-                </motion.div>
-                
-                <motion.button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors shadow-md disabled:opacity-70 disabled:cursor-not-allowed"
-                  variants={fadeInUpVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  custom={3}
-                  viewport={{ once: true, margin: "-50px" }}
-                  whileHover={{ scale: 1.01 }}
-                  whileTap={{ scale: 0.99 }}
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </motion.button>
-                
-                {submitMessage.text && (
-                  <motion.div 
-                    className={`mt-4 p-3 rounded ${submitMessage.type === 'success' ? 'bg-green-100 text-green-800 dark:bg-green-800/30 dark:text-green-300' : 'bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-300'}`}
-                    initial={{ opacity: 0, y: 5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    {submitMessage.text}
-                  </motion.div>
-                )}
-              </form>
-            </motion.div>
-          </ScrollReveal>
+        <div className="flex flex-col items-center justify-center">
           
-          <ScrollReveal direction="right" delay={0.1}>
+          
+          <ScrollReveal direction="center" delay={0.1}>
             <motion.div 
-              className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-md flex flex-col justify-between"
+              className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-md flex flex-col justify-center"
               whileHover={{ boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)' }}
             >
               <div>
