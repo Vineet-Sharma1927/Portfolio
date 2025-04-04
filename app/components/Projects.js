@@ -12,8 +12,8 @@ export default function Projects() {
       description: 'A comprehensive blogging platform with advanced user authentication, content management, and commenting systems.',
       image: '/blog.jpeg',
       tech: ['React', 'Node.js', 'MongoDB', 'Firebase', 'Cloudinary'],
-      github: 'https://github.com/Vineet-Sharma1927/Blog-Sphere',
-      demo: 'https://github.com/Vineet-Sharma1927/Blog-Sphere'
+      github: 'https://github.com/Vineet-Sharma1927/Blog-Sphere-App',
+      demo: 'https://blog-sphere-app-lake.vercel.app/'
     },
     {
       id: 2,
