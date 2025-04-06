@@ -16,6 +16,15 @@ export default function Projects() {
       demo: 'https://blog-sphere-app-lake.vercel.app/'
     },
     {
+      id: 3,
+      title: 'Prakriti App',
+      description: 'Developed an interactive Ayurvedic wellness application that determines a user’s Prakriti ',
+      image: '/prokriti.webp',
+      tech: ['React', 'Tailwind CSS', 'JavaScript', 'Framer Motion'],
+      github: 'https://github.com/Vineet-Sharma1927/Prakriti-App',
+      demo: 'https://prakriti-app.vercel.app/'
+    },
+    {
       id: 2,
       title: 'Swiggy-Clone-App',
       description: 'A responsive Swiggy clone application with real-time restaurant data, ratings, and optimized performance.',
@@ -23,15 +32,6 @@ export default function Projects() {
       tech: ['React', 'JavaScript', 'Swiggy API', 'Vercel'],
       github: 'https://github.com/Vineet-Sharma1927/SwiggyClone-App',
       demo: 'https://swiggy-clone-app-orpin.vercel.app/'
-    },
-    {
-      id: 3,
-      title: 'IPL App',
-      description: 'A comprehensive application for cricket fans to track IPL matches, teams, and player statistics in real-time.',
-      image: '/ipl.avif',
-      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-      github: 'https://github.com/Vineet-Sharma1927/IPL-APP',
-      demo: 'https://ipl-app-sigma.vercel.app/'
     },
   ];
 
@@ -102,9 +102,11 @@ export default function Projects() {
                   )}
                   {project.id === 3 && (
                     <ul className="list-disc pl-5 mb-6 text-gray-600 dark:text-gray-400">
-                      <li className="mb-1">Developed an IPL Tracker App using React, JavaScript, and Tailwind CSS to display team details, match schedules, and live score updates.</li>
-                      <li className="mb-1">Implemented a responsive design for seamless user experience across devices with an intuitive UI/UX.</li>
-                      <li>Integrated dynamic data rendering to ensure real-time updates and enhanced performance.</li>
+                      <li className="mb-1">Designed and developed a modular Ayurvedic wellness web application to assess an individual's Prakriti (Vata, Pitta, or Kapha) based on a multiple-choice lifestyle questionnaire.</li>
+                      <li className="mb-1">Implemented a custom dynamic form that collects user responses and determines the dominant dosha using majority logic..</li>
+                      <li className="mb-1">Displayed personalized results including recommended foods, exercises, and lifestyle tips tailored to the user’s Prakriti.</li>
+                      <li className="mb-1">Integrated Framer Motion for smooth animations and page transitions to enhance user interaction and engagement.</li>
+                      <li className="mb-1">Organized codebase with a scalable component-based architecture for maintainability and future feature expansion.</li>
                     </ul>
                   )}
                   
