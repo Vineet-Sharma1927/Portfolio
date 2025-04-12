@@ -18,7 +18,7 @@ export default function Projects() {
     {
       id: 3,
       title: 'Prakriti App',
-      description: 'Developed an interactive Ayurvedic wellness application that determines a user’s Prakriti ',
+      description: "Developed an interactive Ayurvedic wellness application that determines a user's Prakriti",
       image: '/prokriti.webp',
       tech: ['React', 'Tailwind CSS', 'JavaScript', 'Framer Motion'],
       github: 'https://github.com/Vineet-Sharma1927/Prakriti-App',
@@ -76,8 +76,8 @@ export default function Projects() {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                   />
                 </motion.div>
                 <div className="p-6">
@@ -102,9 +102,9 @@ export default function Projects() {
                   )}
                   {project.id === 3 && (
                     <ul className="list-disc pl-5 mb-6 text-gray-600 dark:text-gray-400">
-                      <li className="mb-1">Designed and developed a modular Ayurvedic wellness web application to assess an individual's Prakriti (Vata, Pitta, or Kapha) based on a multiple-choice lifestyle questionnaire.</li>
+                      <li className="mb-1">Designed and developed a modular Ayurvedic wellness web application to assess an individual&apos;s Prakriti (Vata, Pitta, or Kapha) based on a multiple-choice lifestyle questionnaire.</li>
                       <li className="mb-1">Implemented a custom dynamic form that collects user responses and determines the dominant dosha using majority logic..</li>
-                      <li className="mb-1">Displayed personalized results including recommended foods, exercises, and lifestyle tips tailored to the user’s Prakriti.</li>
+                      <li className="mb-1">Displayed personalized results including recommended foods, exercises, and lifestyle tips tailored to the user&apos;s Prakriti.</li>
                       <li className="mb-1">Integrated Framer Motion for smooth animations and page transitions to enhance user interaction and engagement.</li>
                       <li className="mb-1">Organized codebase with a scalable component-based architecture for maintainability and future feature expansion.</li>
                     </ul>
