@@ -7,13 +7,22 @@ import ScrollReveal from './ScrollReveal';
 export default function Projects() {
   const projects = [
     {
-      id: 1,
+      id: 2,
       title: 'Blog-Sphere',
       description: 'A comprehensive blogging platform with advanced user authentication, content management, and commenting systems.',
       image: '/blog.jpeg',
       tech: ['React', 'Node.js', 'MongoDB', 'Firebase', 'Cloudinary'],
       github: 'https://github.com/Vineet-Sharma1927/Blog-Sphere-App',
       demo: 'https://blog-sphere-app-lake.vercel.app/'
+    },
+    {
+      id: 1,
+      title: 'InkSight',
+      description: 'Psychological Testing Web Application.',
+      image: '/Rorschach_blot_01.jpg',
+      tech: ['FastApi', 'Next.js', 'MongoDB', 'Firebase', 'Artificial intelligence',],
+      github: 'https://github.com/Vineet-Sharma1927/InkSight',
+      demo: 'https://ink-sight.vercel.app/'
     },
     {
       id: 3,
@@ -25,7 +34,7 @@ export default function Projects() {
       demo: 'https://prakriti-app.vercel.app/'
     },
     {
-      id: 2,
+      id: 4,
       title: 'Swiggy-Clone-App',
       description: 'A responsive Swiggy clone application with real-time restaurant data, ratings, and optimized performance.',
       image: '/swiggy.png',
@@ -86,6 +95,14 @@ export default function Projects() {
                   
                   {project.id === 1 && (
                     <ul className="list-disc pl-5 mb-6 text-gray-600 dark:text-gray-400">
+                      <li className="mb-1">Built and deployed a full-stack AI-integrated psychological testing platform that reduced manual data entry workload by 60% through intelligent automation.</li>
+                      <li className="mb-1">Developed a highly interactive Next.js + Tailwind CSS + Framer Motion frontend, achieving 100% mobile responsiveness and streamlining clinician workflows with a 40% faster data entry rate.</li>
+                      <li className="mb-1">Engineered a FastAPI + MongoDB backend with an LLM-powered NLP pipeline that analyzed patient responses and auto-populated multiple form fields with high accuracy..</li>
+                      <li>Designed a scalable MongoDB schema with advanced indexing and implemented secure authentication & role-based access controls, supporting 1,000+ patient sessions while ensuring HIPAA-level compliance.</li>
+                    </ul>
+                  )}
+                  {project.id === 2 && (
+                    <ul className="list-disc pl-5 mb-6 text-gray-600 dark:text-gray-400">
                       <li className="mb-1">Implemented secure user authentication system supporting both email verification and Google Firebase, resulting in a 99.9% reduction in spam accounts and achieving a 40% increase in user signups.</li>
                       <li className="mb-1">Engineered a robust content management system with CRUD operations and real-time content editing, leading to a 65% improvement in content publishing workflow efficiency.</li>
                       <li className="mb-1">Developed an advanced nested commenting system with moderation capabilities, resulting in 3x higher user engagement.</li>
@@ -93,7 +110,7 @@ export default function Projects() {
                     </ul>
                   )}
                   
-                  {project.id === 2 && (
+                  {project.id === 4 && (
                     <ul className="list-disc pl-5 mb-6 text-gray-600 dark:text-gray-400">
                       <li className="mb-1">Engineered a responsive Swiggy clone app using React.js, integrating real-time data from Swiggy API for 100+ restaurants.</li>
                       <li className="mb-1">Implemented dynamic restaurant cards with ratings, resulting in a 30% improvement in user engagement.</li>
