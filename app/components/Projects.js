@@ -7,15 +7,6 @@ import ScrollReveal from './ScrollReveal';
 export default function Projects() {
   const projects = [
     {
-      id: 2,
-      title: 'Blog-Sphere',
-      description: 'A comprehensive blogging platform with advanced user authentication, content management, and commenting systems.',
-      image: '/blog.jpeg',
-      tech: ['React', 'Node.js', 'MongoDB', 'Firebase', 'Cloudinary'],
-      github: 'https://github.com/Vineet-Sharma1927/Blog-Sphere-App',
-      demo: 'https://blog-sphere-app-lake.vercel.app/'
-    },
-    {
       id: 1,
       title: 'InkSight',
       description: 'Psychological Testing Web Application.',
@@ -25,13 +16,22 @@ export default function Projects() {
       demo: 'https://ink-sight.vercel.app/'
     },
     {
-      id: 3,
+      id: 2,
       title: 'Prakriti App',
       description: "Developed an interactive Ayurvedic wellness application that determines a user's Prakriti",
       image: '/prokriti.webp',
       tech: ['React', 'Tailwind CSS', 'JavaScript', 'Framer Motion'],
       github: 'https://github.com/Vineet-Sharma1927/Prakriti-App',
       demo: 'https://prakriti-app.vercel.app/'
+    },
+    {
+      id: 3,
+      title: 'Blog-Sphere',
+      description: 'A comprehensive blogging platform with advanced user authentication, content management, and commenting systems.',
+      image: '/blog.jpeg',
+      tech: ['React', 'Node.js', 'MongoDB', 'Firebase', 'Cloudinary'],
+      github: 'https://github.com/Vineet-Sharma1927/Blog-Sphere-App',
+      demo: 'https://blog-sphere-app-lake.vercel.app/'
     },
     {
       id: 4,

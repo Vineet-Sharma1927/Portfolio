@@ -58,12 +58,13 @@ export default function About() {
               
               <div className="space-y-4">
                 {[
-                  { name: "JavaScript", level: 95 },
-                  { name: "React", level: 90 },
-                  { name: "Next.js", level: 85 },
+                  { name: "FastApi", level: 95 },
                   { name: "Node.js", level: 80 },
-                  { name: "MongoDB", level: 75 },
                   { name: "TypeScript", level: 85 },
+                  { name: "Next.js", level: 85 },
+                  { name: "React", level: 90 },
+                  { name: "MongoDB", level: 75 },
+                  { name: "JavaScript", level: 95 },
                   { name: "Tailwind CSS", level: 90 }
                 ].map((skill, index) => (
                   <motion.div
