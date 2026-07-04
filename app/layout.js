@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio | Web Developer",
-  description: "Personal portfolio showcasing my web development projects and skills",
-  keywords: "web developer, frontend developer, MERN stack, JavaScript, React, Next.js, Node.js, MongoDB",
+  title: "Vineet Sharma | Full Stack Developer",
+  description: "Full Stack Developer portfolio focused on enterprise B2B HealthTech work, AI-driven systems, and scalable web platforms.",
+  keywords: "Full Stack Developer, HealthTech, Next.js, FastAPI, TypeScript, React, MongoDB, Python, enterprise software",
 };
 
 export default function RootLayout({ children }) {
